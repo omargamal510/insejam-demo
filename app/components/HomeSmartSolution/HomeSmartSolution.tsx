@@ -1,3 +1,4 @@
+import Observer from "@/app/ui/Observer";
 import OrangeBtn from "@/app/ui/OrangeBtn";
 import Image from "next/image";
 
@@ -5,19 +6,25 @@ function HomeSmartSolution() {
   return (
     <div className="bg-light-purple">
       <div className="flex flex-col gap-7 mb-20">
-        <h2 className="text-blue-primary font-black text-8xl">
-          Smart Solution
-        </h2>
+        <Observer>
+          <h2 className="text-blue-primary  font-black text-8xl">
+            Smart Solution
+          </h2>
+        </Observer>
 
         <div className="flex flex-col md:flex-row items-center gap-5 text-blue-primary">
-          <h3 className="text-7xl font-medium">
-            Transform Facilities with Intelligent Optimization
-          </h3>
-          <p className="text-xl">
-            Leverage IoT-driven insights and digital twins to automate
-            infrastructure systems — achieving higher efficiency, lower costs,
-            and sustainable performance.
-          </p>
+          <Observer>
+            <h3 className="text-7xl font-medium">
+              Transform Facilities with Intelligent Optimization
+            </h3>
+          </Observer>
+          <Observer yaxis>
+            <p className="text-xl">
+              Leverage IoT-driven insights and digital twins to automate
+              infrastructure systems — achieving higher efficiency, lower costs,
+              and sustainable performance.
+            </p>
+          </Observer>
         </div>
       </div>
 

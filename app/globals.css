@@ -26,6 +26,10 @@
   --color-blue-primary: #056ec4;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -37,6 +41,24 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* General css */
+.transition-500 {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.transition-300 {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.transition-800 {
+  @apply transition-all duration-800 ease-in-out;
+}
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+/* General css */
 
 /* Extra large screens (e.g. 1536px and up) */
 @media (min-width: 1536px) {
